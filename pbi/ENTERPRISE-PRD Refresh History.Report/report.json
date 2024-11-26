@@ -1,0 +1,156 @@
+{
+  "config": "{\"version\":\"5.44\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY23SU04\",\"version\":\"5.44\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{}",
+      "name": "Pod",
+      "referenceScope": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY23SU04",
+            "path": "BaseThemes/CY23SU04.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "items": [
+          {
+            "name": "ADM-New16488089699124586.png",
+            "path": "ADM-New16488089699124586.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"317L\"}}}}}]},\"filterSortOrder\":3}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[{\"name\":\"Filterdba512ac81c3e1c2532e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"WorkspaceID\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":0},{\"name\":\"Filter845ef052670d40b01602\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"WorkspaceName\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":1},{\"name\":\"Filter713cbe261506e210ec57\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"DatasetID\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":2},{\"name\":\"Filter221811c80817d11bcb4a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"DatasetName\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{}}]},\"ordinal\":3},{\"name\":\"Filter896f5b1831916b80a3ba\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"RefreshStatus\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"ordinal\":4},{\"name\":\"Filter618923c40b600a263135\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"RefreshType\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":5},{\"name\":\"Filterf7b2063265062b05ceed\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"DurationDiff\"}},\"type\":\"Advanced\",\"howCreated\":1,\"ordinal\":6},{\"name\":\"Filter38035bfc40a1157c2860\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"configuredBy\"}},\"type\":\"Categorical\",\"howCreated\":1,\"ordinal\":7},{\"name\":\"Filtere2ac315642bc94dc700e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"Message\"}},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{},\"ordinal\":8}]",
+      "height": 720.00,
+      "name": "ReportSection",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"08e865fc2a982671d780\",\"layouts\":[{\"id\":0,\"position\":{\"x\":1125.5172413793105,\"y\":4.012539184952979,\"z\":4000,\"width\":154.48275862068965,\"height\":32.10031347962383,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(RefreshHistoryENTERPRISE_PRD.DatasetRefreshDateTimeEST)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetRefreshDateTimeEST\"}},\"Function\":4},\"Name\":\"Min(RefreshHistoryENTERPRISE_PRD.DatasetRefreshDateTimeEST)\",\"NativeReferenceName\":\"Latest DatasetRefreshDateTimeEST\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetRefreshDateTimeEST\"}},\"Function\":4}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"10D\"}}}}}],\"wordWrap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 32.10,
+          "width": 154.48,
+          "x": 1125.52,
+          "y": 4.01,
+          "z": 4000.00
+        },
+        {
+          "config": "{\"name\":\"4f5a23ba1e9a3e55be31\",\"layouts\":[{\"id\":0,\"position\":{\"x\":105.17302122831636,\"y\":4.891768429224017,\"z\":8000,\"width\":249.48018989042484,\"height\":90.49771594064431,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"RefreshHistoryENTERPRISE_UAT.RefreshStartTimeEST\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r1\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r1\"}},\"Property\":\"RefreshStartTimeEST\"},\"Name\":\"RefreshHistoryENTERPRISE_UAT.RefreshStartTimeEST\",\"NativeReferenceName\":\"RefreshStartTimeEST\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r1\"}},\"Property\":\"RefreshStartTimeEST\"}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Relative'\"}}},\"relativeRange\":{\"expr\":{\"Literal\":{\"Value\":\"'Last'\"}}},\"relativeDuration\":{\"expr\":{\"Literal\":{\"Value\":\"2D\"}}},\"relativePeriod\":{\"expr\":{\"Literal\":{\"Value\":\"'Days'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"r1\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Between\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r1\"}},\"Property\":\"RefreshStartTimeEST\"}},\"LowerBound\":{\"DateSpan\":{\"Expression\":{\"DateAdd\":{\"Expression\":{\"DateAdd\":{\"Expression\":{\"Now\":{}},\"Amount\":1,\"TimeUnit\":0}},\"Amount\":-2,\"TimeUnit\":0}},\"TimeUnit\":0}},\"UpperBound\":{\"DateSpan\":{\"Expression\":{\"Now\":{}},\"TimeUnit\":0}}}}}]}}}}],\"dateRange\":[{\"properties\":{\"includeToday\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"slider\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 90.50,
+          "width": 249.48,
+          "x": 105.17,
+          "y": 4.89,
+          "z": 8000.00
+        },
+        {
+          "config": "{\"name\":\"6fd54ff4a12119760576\",\"layouts\":[{\"id\":0,\"position\":{\"x\":544.9931802366041,\"y\":38.7652052887961,\"z\":3000,\"width\":143.65929018789143,\"height\":129.9774530271399,\"tabOrder\":6000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(RefreshHistoryENTERPRISE_PRD.WorkspaceID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"WorkspaceID\"}},\"Function\":2},\"Name\":\"Min(RefreshHistoryENTERPRISE_PRD.WorkspaceID)\",\"NativeReferenceName\":\"Count of WorkspaceID1\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"WorkspaceID\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(RefreshHistoryENTERPRISE_PRD.WorkspaceID)\":{\"displayName\":\"Workspaces\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 129.98,
+          "width": 143.66,
+          "x": 544.99,
+          "y": 38.77,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"86b87034d0e5e54b40b1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":181.47056317628017,\"z\":0,\"width\":1279.6001249609499,\"height\":538.207567710848,\"tabOrder\":5000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.RefreshType\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.WorkspaceName\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.DatasetName\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.RefreshStartTimeEST1\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.RefreshEndTimeEST1\"},{\"queryRef\":\"Sum(RefreshHistoryENTERPRISE_PRD.RefreshDuration(Sec))\"},{\"queryRef\":\"Sum(RefreshHistoryENTERPRISE_UAT.AvgCompletedDurationC)\"},{\"queryRef\":\"Sum(RefreshHistoryENTERPRISE_UAT.DurationDiff)\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.RefreshStatus\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_UAT.RequestID\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_UAT.DatasetID\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.configuredBy\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_UAT.WorkspaceID\"},{\"queryRef\":\"RefreshHistoryENTERPRISE_PRD.Message\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"WorkspaceName\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.WorkspaceName\",\"NativeReferenceName\":\"WorkspaceName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetName\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.DatasetName\",\"NativeReferenceName\":\"DatasetName\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshType\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.RefreshType\",\"NativeReferenceName\":\"RefreshType\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshStatus\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.RefreshStatus\",\"NativeReferenceName\":\"RefreshStatus\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshDuration(Sec)\"},\"Name\":\"Sum(RefreshHistoryENTERPRISE_PRD.RefreshDuration(Sec))\",\"NativeReferenceName\":\"RefreshDuration(Sec)\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshStartTimeEST\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.RefreshStartTimeEST1\",\"NativeReferenceName\":\"RefreshStartTimeEST1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshEndTimeEST\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.RefreshEndTimeEST1\",\"NativeReferenceName\":\"RefreshEndTimeEST1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"configuredBy\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.configuredBy\",\"NativeReferenceName\":\"configuredBy\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"Message\"},\"Name\":\"RefreshHistoryENTERPRISE_PRD.Message\",\"NativeReferenceName\":\"Message\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"WorkspaceID\"},\"Name\":\"RefreshHistoryENTERPRISE_UAT.WorkspaceID\",\"NativeReferenceName\":\"WorkspaceID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetID\"},\"Name\":\"RefreshHistoryENTERPRISE_UAT.DatasetID\",\"NativeReferenceName\":\"DatasetID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RequestID\"},\"Name\":\"RefreshHistoryENTERPRISE_UAT.RequestID\",\"NativeReferenceName\":\"RequestID\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"AvgCompletedDuration\"},\"Name\":\"Sum(RefreshHistoryENTERPRISE_UAT.AvgCompletedDurationC)\",\"NativeReferenceName\":\"AvgCompletedDurationC1\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DurationDiff\"},\"Name\":\"Sum(RefreshHistoryENTERPRISE_UAT.DurationDiff)\",\"NativeReferenceName\":\"DurationDiff1\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshStartTimeEST\"}}}]},\"columnProperties\":{\"Sum(RefreshHistoryENTERPRISE_PRD.RefreshDuration(Sec))\":{\"displayName\":\"RefreshDuration(Sec)\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 538.21,
+          "width": 1279.60,
+          "x": 0.00,
+          "y": 181.47,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a29d1ab5a0d57e00aecb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":983.2193494578815,\"y\":4.27022518765638,\"z\":5000,\"width\":155.86321934945786,\"height\":34.16180150125104,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dataset Refreshed(EST):\"}]}]}}]}}}",
+          "filters": "[]",
+          "height": 34.16,
+          "width": 155.86,
+          "x": 983.22,
+          "y": 4.27,
+          "z": 5000.00
+        },
+        {
+          "config": "{\"name\":\"b2dd2c0057057a17a141\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"z\":1000,\"width\":106.2730627306273,\"height\":108.63468634686346,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"image\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"imageUrl\":{\"expr\":{\"ResourcePackageItem\":{\"PackageName\":\"RegisteredResources\",\"PackageType\":1,\"ItemName\":\"ADM-New16488089699124586.png\"}}}}}],\"imageScaling\":[{\"properties\":{\"imageScalingType\":{\"expr\":{\"Literal\":{\"Value\":\"'Normal'\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"lockAspect\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 108.63,
+          "width": 106.27,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"b4234e4877505ecc32b6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":850.5542101600556,\"y\":47.88643006263048,\"z\":7000,\"width\":164.18204592901878,\"height\":109.45469728601253,\"tabOrder\":8000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(RefreshHistoryENTERPRISE_PRD.DatasetID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetID\"}},\"Function\":2},\"Name\":\"Min(RefreshHistoryENTERPRISE_PRD.DatasetID)\",\"NativeReferenceName\":\"Refresh Failed\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetID\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(RefreshHistoryENTERPRISE_PRD.DatasetID)\":{\"displayName\":\"Refresh Failed\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filterf093edf06418779db60a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"RefreshStatus\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshStatus\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Failed'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 109.45,
+          "width": 164.18,
+          "x": 850.55,
+          "y": 47.89,
+          "z": 7000.00
+        },
+        {
+          "config": "{\"name\":\"efaa0bf36362050065dd\",\"layouts\":[{\"id\":0,\"position\":{\"x\":688.6524704244955,\"y\":38.7652052887961,\"z\":6000,\"width\":164.18204592901878,\"height\":125.41684064022269,\"tabOrder\":7000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(RefreshHistoryENTERPRISE_PRD.DatasetID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetID\"}},\"Function\":2},\"Name\":\"Min(RefreshHistoryENTERPRISE_PRD.DatasetID)\",\"NativeReferenceName\":\"Refresh Completed\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetID\"}},\"Function\":2}}}]},\"columnProperties\":{\"Min(RefreshHistoryENTERPRISE_PRD.DatasetID)\":{\"displayName\":\"Refresh Completed\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"Filter8be8ee87228233b9b70a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"RefreshHistoryENTERPRISE_UAT\"}},\"Property\":\"RefreshStatus\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"RefreshStatus\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Completed'\"}}]]}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{}}]",
+          "height": 125.42,
+          "width": 164.18,
+          "x": 688.65,
+          "y": 38.77,
+          "z": 6000.00
+        },
+        {
+          "config": "{\"name\":\"f6ad4501630ed4702415\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":96.37869385683638,\"z\":2000,\"width\":559.3743800318347,\"height\":47.24445777295901,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Dataset Refresh History - Enterprise - PRD Datasets\",\"textStyle\":{\"fontSize\":\"18pt\"}}]}]}}]}}}",
+          "filters": "[]",
+          "height": 47.24,
+          "width": 559.37,
+          "x": 0.00,
+          "y": 96.38,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ReportSectiond4e598a9c1b2b1694bf5",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"680303504780719afe08\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10,\"y\":0,\"width\":280,\"height\":280,\"z\":0,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Min(RefreshHistoryENTERPRISE_UAT.DatasetName)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"r\",\"Entity\":\"RefreshHistoryENTERPRISE_UAT\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetName\"}},\"Function\":2},\"Name\":\"Min(RefreshHistoryENTERPRISE_UAT.DatasetName)\",\"NativeReferenceName\":\"Count of DatasetName\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"r\"}},\"Property\":\"DatasetName\"}},\"Function\":2}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 280.00,
+          "width": 280.00,
+          "x": 10.00,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
